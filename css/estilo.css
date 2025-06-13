@@ -224,7 +224,7 @@ form button:hover {
 footer {
   background-color: #17682a;
   color: white;
-  bottom: 0;
+  bottom: 1%;
   padding: 1rem;
   text-align: center;
   border-top: 4px solid #0f441b;
