@@ -221,11 +221,13 @@ form button:hover {
   transform: scale(1.05);
 }
 
-footer {
+.footer {
   background-color: #17682a;
-  color: white;
-  padding: 1rem;
+  color: #fff;
   text-align: center;
-  border-top: 4px solid #0f441b;
-  margin-top: auto;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 3px solid #c21807;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
