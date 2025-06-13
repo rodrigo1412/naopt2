@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Hunter x Hunter Nen Wiki</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="stylesheet" href="css/contato.css" />
+  <link rel="icon" href="imgs/simbolo_nen.png">
+</head>
+
+<body class="pagina-contato">
+
+  <header>
+    <h1>Contato</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="formContato" onsubmit="return validarFormulario(event)">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" placeholder="(11) 91234-5678" required>
+
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" rows="6" placeholder="Escreva sua mensagem..." required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script>
+    function validarFormulario(event) {
+      event.preventDefault();
+
+      const form = document.getElementById('formContato');
+      const nome = form.nome.value.trim();
+      const email = form.email.value.trim();
+      const telefone = form.telefone.value.trim();
+      const mensagem = form.mensagem.value.trim();
+
+      if (nome === "") {
+        alert("Por favor, preencha o campo Nome.");
+        return false;
+      }
+
+      if (!validarEmail(email)) {
+        alert("Por favor, insira um e-mail válido.");
+        return false;
+      }
+
+      if (!/^\d{9,15}$/.test(telefone.replace(/\D/g, ''))) {
+        alert("Por favor, insira um número válido (apenas dígitos, de 9 a 15 caracteres).");
+        return false;
+      }
+
+      if (mensagem.length < 10) {
+        alert("A mensagem deve conter pelo menos 10 caracteres.");
+        return false;
+      }
+
+      // Se tudo estiver OK, redireciona para a página de agradecimento
+      window.location.href = 'obrigado.html';
+      return true;
+    }
+
+    function validarEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(email);
+    }
+  </script>
+    <footer class="footer">
+        <p>Todos os direitos reservados a @Rodrigo_rsm_ 2025</p>
+      </footer>
+</body>
+
+</html>

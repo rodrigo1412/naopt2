@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Obrigado - Nen</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <link rel="icon" href="imgs/simbolo_nen.png">
+  <style>
+    body {
+      background-color: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #17682a;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      text-align: center;
+      background-color: #f4f4f4;
+      border: 2px solid #17682a;
+      border-radius: 16px;
+      padding: 2rem 3rem;
+      box-shadow: 0 0 20px #17682a88;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      background-color: #17682a;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #145a23;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Obrigado pela resposta!</h1>
+    <p>Sua mensagem foi enviada com sucesso.</p>
+    <button onclick="window.location.href='index.html'">Voltar para a página inicial</button>
+  </main>
+</body>
+
+</html>

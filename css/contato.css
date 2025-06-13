@@ -1,0 +1,94 @@
+/* Fundo e fonte padrão */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Cabeçalho */
+  
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #17682a;
+  }
+  
+  /* Container central com tamanho reduzido */
+  .form-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    border: 2px solid #17682a;
+    border-radius: 16px;
+    box-shadow: 0 0 20px #17682a88;
+  }
+  
+  /* Labels e texto */
+  form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #17682a;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+  
+  /* Inputs e textareas compactos */
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 0.95rem;
+    background-color: #f4f4f4;
+    border: 2px solid #17682a;
+    color: #17682a;
+    border-radius: 6px;
+    transition: 0.3s;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #17682a;
+    box-shadow: 0 0 10px #17682a;
+  }
+  
+  form textarea {
+    resize: vertical;
+  }
+  
+  /* Botão estilo Nen */
+  form button {
+    margin-top: 1.5rem;
+    background-color: #17682a;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  form button:hover {
+    background-color: #c21807;
+    transform: scale(1.05);
+  }
+
+  .footer {
+    background-color: #17682a;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    border-top: 3px solid #c21807;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
